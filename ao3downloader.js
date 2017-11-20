@@ -6,7 +6,7 @@ const username = 'resonance_and_d';
 const currentPage = 1;
 
 //gets the first page of the bookmarks
-axios.get(`http://archiveofourown.org/users/${username}/bookmarks?page=${currentPage}`)
+axios.get(`https://archiveofourown.org/users/${username}/bookmarks?page=${currentPage}`)
   .then(html_page => {
     console.log(html_page);
   })
